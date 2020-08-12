@@ -18,11 +18,11 @@
 
 enum commandenum{STOP, FORWARD, BACKWARD, LEFT, RIGHT};
 
-void *motor(void *threadId);
-void *pressure(void *threadId);
-void *distance(void *threadId);
-void *randomLego(void *threadId);
-void *straight(void *threadId);
+void *motor();
+void *pressure();
+void *distance();
+void *randomLego();
+void *straight();
 void order_update(int u, int d, enum commandenum c, int s);
 void timespec_add_us(struct timespec *t, long us);
 int timespec_cmp(struct timespec *a, struct timespec *b);
